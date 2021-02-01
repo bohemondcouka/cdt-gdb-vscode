@@ -12,7 +12,7 @@ import { MemoryServer } from './memory/server/MemoryServer';
 
 export function activate(context: ExtensionContext) {
     new MemoryServer(context);
-
+    console.log("Just to see if it work.\n");
     context.subscriptions.push(
         commands.registerCommand('cdt.debug.askProgramPath', config => {
             return window.showInputBox({
